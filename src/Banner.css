@@ -1,7 +1,7 @@
 .banner{
     color :white;
     object-fit: contain;
-    height: 448px; 
+    height: 600px; 
 }
 
 
@@ -9,6 +9,23 @@
     margin-left:30px;
     padding-top:140px;
     height: 190px; 
+}
+
+.banner__Maintitle{
+    font-size: 3rem; 
+    font-weight:800;
+    padding-bottom: 0.3rem;
+    text-align:right; 
+    padding-right: 20px;
+}
+
+.banner__subMainTitle{
+    font-size: 0.8rem; 
+    font-weight:800;
+    padding-bottom: 0.3rem;
+    text-align:right; 
+    padding-right: 50px;
+
 }
 
 .banner__title {
@@ -27,8 +44,17 @@
     height: 80px;
 }
 
+.link{
+    text-decoration: none;
+    color:white;
+}
 
+.link:hover{
+    text-decoration: none;
+    color:black;
+}
 .banner__button {
+
 cursor: pointer; 
 color : white; 
 outline:none; 

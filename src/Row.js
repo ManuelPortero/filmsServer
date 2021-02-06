@@ -3,7 +3,7 @@
     import './Row.css';
     const base_url = "https://image.tmdb.org/t/p/original/";
 
-function Row({ title , fetchUrl, isLargeRow}){
+function Row({ title , fetchUrl, isLargeRow , handleAddToNavbar}){
     const [movies, setMovies] = useState([]); 
   
     //Snippet of code wich runs based on a specific condition/variable
@@ -27,7 +27,7 @@ function Row({ title , fetchUrl, isLargeRow}){
                 {/*several row_poster(s)*/}
 
                 {movies.map(movie =>(
-                    <img key={movie.id} className={`row__poster ${isLargeRow && "row__posterLarge"}`} 
+                    <img key={movie.id} onClick={() => handleAddToNavbar(movie)} className={`row__poster ${isLargeRow && "row__posterLarge"}`} 
                     src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name}/>
                 ))}
             </div>
